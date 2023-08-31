@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* VARIABLE */
+    :root{
+    --BLACK: #333;
+    --OPACITY: 0.6;
+
+    /* FONT */
+    --FS-SMALL: 0.6rem;
+    --FW-LIGHT: 500;
+    --FW-BOLD: 700;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+
+  .container {
+    z-index: -2;
+    width: min(85%, 380px);
+    background-color: white;
+    border-radius: 15px;
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: aqua;
+    background-image: url(images/bg-pattern-card.svg);
+    width: min(85%, 380px);
+    height: 130px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .profile {
+    margin-top: 70px;
+    width: 110px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name-age, .live {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name-age {
+    gap: 12px;
+    margin: 10px 0px 7px 0px;
+    font-size: var(--FS-SMALL);
+    color: var(--BLACK);
+  }
+
+
+.age {
+    opacity: var(--OPACITY);
+    font-weight: var(--FW-LIGHT);
+}
+
+  .live {
+    font-size: 0.9rem;
+    font-weight: var(--FW-LIGHT);
+    color: var(--BLACK);
+    opacity: var(--OPACITY);
+    margin-bottom: 28px;
+  }
+
+  .border-bot {
+    border-bottom: 1.7px solid rgba(0, 0, 0, 0.07);
+  }
+
+  .info {
+    margin: 25px;
+    font-size: var(--FS-SMALL);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .num {
+    display: flex;
+    justify-content: center;
+  }
+
+ .des {
+    display: flex;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: var(--FW-BOLD);
+    letter-spacing: 1px;
+    margin-top: 6px;
+    opacity: var(--OPACITY);
+ }
